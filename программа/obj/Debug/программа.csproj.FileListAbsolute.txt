@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.exe.config
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Form1.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Properties.Resources.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Form2.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Form3.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Form4.resources
