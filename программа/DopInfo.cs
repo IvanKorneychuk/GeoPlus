@@ -19,8 +19,11 @@ namespace программа
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Блпгодарим за сообщение , вскоре мы вам ответим", "Спасибо" );
+            MessageBox.Show("Благодарим за сообщение , вскоре мы вам ответим", "Спасибо" );
 
         }
+ 
+    
+
     }
 }
