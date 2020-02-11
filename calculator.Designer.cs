@@ -47,6 +47,8 @@
             this.usluga2 = new System.Windows.Forms.CheckBox();
             this.usluga3 = new System.Windows.Forms.CheckBox();
             this.spravkaTextBox = new System.Windows.Forms.TextBox();
+            this.ItogS = new System.Windows.Forms.Label();
+            this.ItogB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usluga1comboBox
@@ -62,7 +64,7 @@
             this.usluga1comboBox.Name = "usluga1comboBox";
             this.usluga1comboBox.Size = new System.Drawing.Size(140, 24);
             this.usluga1comboBox.TabIndex = 4;
-            this.usluga1comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.usluga1comboBox.SelectedIndexChanged += new System.EventHandler(this.button1_Click);
             // 
             // usluga1label
             // 
@@ -88,7 +90,7 @@
             this.usluga2comboBox.Name = "usluga2comboBox";
             this.usluga2comboBox.Size = new System.Drawing.Size(140, 24);
             this.usluga2comboBox.TabIndex = 6;
-            this.usluga2comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.usluga2comboBox.SelectedIndexChanged += new System.EventHandler(this.button2_Click);
             // 
             // usluga2label
             // 
@@ -113,6 +115,7 @@
             this.usluga3comboBox.Name = "usluga3comboBox";
             this.usluga3comboBox.Size = new System.Drawing.Size(140, 24);
             this.usluga3comboBox.TabIndex = 8;
+            this.usluga3comboBox.SelectedIndexChanged += new System.EventHandler(this.button3_Click);
             // 
             // usluga1StoimostLabel
             // 
@@ -181,6 +184,7 @@
             this.usluga1.Size = new System.Drawing.Size(18, 17);
             this.usluga1.TabIndex = 18;
             this.usluga1.UseVisualStyleBackColor = true;
+            this.usluga1.CheckedChanged += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -231,6 +235,7 @@
             this.usluga2.Size = new System.Drawing.Size(18, 17);
             this.usluga2.TabIndex = 23;
             this.usluga2.UseVisualStyleBackColor = true;
+            this.usluga2.CheckedChanged += new System.EventHandler(this.button2_Click);
             // 
             // usluga3
             // 
@@ -241,21 +246,46 @@
             this.usluga3.Size = new System.Drawing.Size(18, 17);
             this.usluga3.TabIndex = 24;
             this.usluga3.UseVisualStyleBackColor = true;
+            this.usluga3.CheckedChanged += new System.EventHandler(this.button3_Click);
             // 
             // spravkaTextBox
             // 
             this.spravkaTextBox.Location = new System.Drawing.Point(22, 350);
             this.spravkaTextBox.Multiline = true;
             this.spravkaTextBox.Name = "spravkaTextBox";
+            this.spravkaTextBox.ReadOnly = true;
             this.spravkaTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.spravkaTextBox.Size = new System.Drawing.Size(856, 134);
             this.spravkaTextBox.TabIndex = 25;
+            // 
+            // ItogS
+            // 
+            this.ItogS.AutoSize = true;
+            this.ItogS.Location = new System.Drawing.Point(789, 294);
+            this.ItogS.Name = "ItogS";
+            this.ItogS.Size = new System.Drawing.Size(67, 17);
+            this.ItogS.TabIndex = 26;
+            this.ItogS.Text = "0 рублей";
+            this.ItogS.Click += new System.EventHandler(this.ItogS_Click);
+            // 
+            // ItogB
+            // 
+            this.ItogB.Location = new System.Drawing.Point(638, 291);
+            this.ItogB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ItogB.Name = "ItogB";
+            this.ItogB.Size = new System.Drawing.Size(75, 23);
+            this.ItogB.TabIndex = 27;
+            this.ItogB.Text = "тыкни";
+            this.ItogB.UseVisualStyleBackColor = true;
+            this.ItogB.Click += new System.EventHandler(this.ItogB_Click);
             // 
             // calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 496);
+            this.Controls.Add(this.ItogB);
+            this.Controls.Add(this.ItogS);
             this.Controls.Add(this.spravkaTextBox);
             this.Controls.Add(this.usluga3);
             this.Controls.Add(this.usluga2);
@@ -303,5 +333,7 @@
         private System.Windows.Forms.CheckBox usluga2;
         private System.Windows.Forms.CheckBox usluga3;
         private System.Windows.Forms.TextBox spravkaTextBox;
+        private System.Windows.Forms.Label ItogS;
+        private System.Windows.Forms.Button ItogB;
     }
 }
