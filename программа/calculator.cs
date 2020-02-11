@@ -17,21 +17,6 @@ namespace программа
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int sum = 0;
@@ -67,8 +52,6 @@ namespace программа
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int sum1 = 0;
-
             int usluga2Price = 0;
 
             //Горизонтальная съемка земельного участка
@@ -94,12 +77,10 @@ namespace программа
                     usluga2Price = 8000;
                 }
 
-                usluga2StoimostLabel.Text = usluga2Price.ToString() + " рублей";
             }
 
             //Итого
-            sum1 = usluga2Price;
-
+            usluga2StoimostLabel.Text = usluga2Price.ToString() + " рублей";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -134,12 +115,56 @@ namespace программа
             sum2 = usluga3Price;
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void usluga2StoimostLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void usluga2StoimostLabel_Click(object sender, EventArgs e)
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga1label.Text + ".txt");
+            }
+            catch (Exception) { }
+
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga2label.Text + ".txt");
+            }
+            catch (Exception) { }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga3label.Text + ".txt");
+            }
+            catch (Exception) { }
+        }
+
+        private void ItogB_Click(object sender, EventArgs e)
+        {
+
+            int price1 = Convert.ToInt32(usluga1StoimostLabel.Text.Replace(" рублей", ""));
+            int price2 = Convert.ToInt32(usluga2StoimostLabel.Text.Replace(" рублей", ""));
+            int price3 = Convert.ToInt32(usluga3StoimostLabel.Text.Replace(" рублей", ""));
+
+            int priceItog = price1 + price2 + price3;
+            ItogS.Text = priceItog.ToString() + " рублей";
+        }
+
+        private void ItogS_Click(object sender, EventArgs e)
         {
 
         }
