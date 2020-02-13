@@ -57,5 +57,11 @@ namespace программа
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form1 form5 = new Form1();
+            form5.Show();
+        }
     }
 }

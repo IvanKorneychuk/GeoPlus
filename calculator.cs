@@ -42,11 +42,11 @@ namespace программа
                     usluga1Price = 12000;
                 }
 
-                usluga1StoimostLabel.Text = usluga1Price.ToString() + " рублей";
+                
             }
 
             //Итого
-            sum = usluga1Price;
+            usluga1StoimostLabel.Text = usluga1Price.ToString() + " рублей";
          
         }
 
@@ -108,11 +108,11 @@ namespace программа
                     usluga3Price = 6000;
                 }
 
-                usluga3StoimostLabel.Text = usluga3Price.ToString() + " рублей";
+                
             }
 
             //Итого
-            sum2 = usluga3Price;
+            usluga3StoimostLabel.Text = usluga3Price.ToString() + " рублей";
         }
 
         private void usluga2StoimostLabel_Click(object sender, EventArgs e)

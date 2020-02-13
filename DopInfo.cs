@@ -22,8 +22,10 @@ namespace программа
             MessageBox.Show("Благодарим за сообщение , вскоре мы вам ответим", "Спасибо" );
 
         }
- 
-    
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.geoplus73.com");
+        }
     }
 }
