@@ -10,16 +10,83 @@ using System.Windows.Forms;
 
 namespace программа
 {
+    public struct Usluga
+    {
+        public CheckBox vybrano;
+        public Label lb;
+        public ComboBox cb;
+        public Dictionary<string, int> Prices;
+
+        public Usluga(string name, Dictionary<string, int> _Prices)
+        {
+            vybrano = new CheckBox();
+            lb = new Label();
+            lb.Text = name;
+
+            Prices = _Prices;
+            cb = new ComboBox();
+            cb.Items.Clear();
+            foreach (string variant in Prices.Keys)
+            {
+                cb.Items.Add(variant);
+            }
+        }
+    }
+
     public partial class calculator : Form
     {
+        Usluga[] uslugi = new Usluga[4];
+
         public calculator()
         {
             InitializeComponent();
+
+            uslugi[0] = new Usluga("Горизонтальная съемка земельного участка", 
+                new Dictionary<string, int>
+                {
+                    { "До 1000М²", 7000 },
+                    { "До 10000М²", 10000 },
+                    { "От 10000М²", 12000 }
+                });
+
+            uslugi[1] = new Usluga("Подготовка межевого плана",
+                new Dictionary<string, int>
+                {
+                    { "Образование з/у", 7000 },
+                    { "Уточнение гр-ц з / у", 7000 },
+                    { "Раздел з/ у", 8000 },
+                    { "Объединение з/ у", 8000 }
+                });
+
+            uslugi[2] = new Usluga("Подготовка межевого плана",
+                new Dictionary<string, int>
+                {
+                    { "ИЖС", 7000 },
+                    { "Помещение", 5000 },
+                    { "Часть в здании/доме", 6000 }
+                });
+
+            uslugi[3] = new Usluga("Строительство",
+                new Dictionary<string, int>
+                {
+                    { "ИЖС", 1200000 },
+                    { "Коммерческая недвижимость", 500000 },
+                    { "Инженерные коммуникации", 650000 }
+                });
+
+            int y = 0;
+            for (int i = 0; i < uslugi.Length; i = i + 1)
+            {
+                uslugi[i].vybrano.Location = new Point(0, y);
+                Controls.Add(uslugi[i].vybrano);
+
+                y = y + 50;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int sum = 0;
+          
 
             int usluga1Price = 0;
 
@@ -46,8 +113,7 @@ namespace программа
             }
 
             //Итого
-            sum = usluga1Price;
-         
+            usluga1StoimostLabel.Text = usluga1Price.ToString() + " рублей";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -85,7 +151,7 @@ namespace программа
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int sum2 = 0;
+           
 
             int usluga3Price = 0;
 
@@ -112,7 +178,8 @@ namespace программа
             }
 
             //Итого
-            sum2 = usluga3Price;
+
+            usluga3StoimostLabel.Text = usluga3Price.ToString() + " рублей";
         }
 
         private void usluga2StoimostLabel_Click(object sender, EventArgs e)
@@ -159,12 +226,64 @@ namespace программа
             int price1 = Convert.ToInt32(usluga1StoimostLabel.Text.Replace(" рублей", ""));
             int price2 = Convert.ToInt32(usluga2StoimostLabel.Text.Replace(" рублей", ""));
             int price3 = Convert.ToInt32(usluga3StoimostLabel.Text.Replace(" рублей", ""));
+            int price4 = Convert.ToInt32(usluga4StoimostLabel.Text.Replace(" рублей", ""));
 
             int priceItog = price1 + price2 + price3;
             ItogS.Text = priceItog.ToString() + " рублей";
         }
 
         private void ItogS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga4label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            int usluga4Price = 0;
+
+            //Горизонтальная съемка земельного участка
+            if (usluga4.Checked)
+            {
+                //До 1000М²
+                if (usluga4comboBox.SelectedIndex == 0)
+                {
+                    usluga4Price = 1200000;
+                }
+                //До 10000М²
+                if (usluga4comboBox.SelectedIndex == 1)
+                {
+                    usluga4Price = 500000;
+                }
+                //Больше 1га
+                if (usluga3comboBox.SelectedIndex == 2)
+                {
+                    usluga4Price = 650000;
+                }
+
+                usluga4StoimostLabel.Text = usluga4Price.ToString() + " рублей";
+            }
+
+            //Итого
+            usluga4StoimostLabel.Text = usluga4Price.ToString() + " рублей";
+        }
+
+        private void usluga4StoimostLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga3StoimostLabel_Click(object sender, EventArgs e)
         {
 
         }

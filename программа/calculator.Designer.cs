@@ -49,6 +49,11 @@
             this.spravkaTextBox = new System.Windows.Forms.TextBox();
             this.ItogS = new System.Windows.Forms.Label();
             this.ItogB = new System.Windows.Forms.Button();
+            this.usluga4 = new System.Windows.Forms.CheckBox();
+            this.usluga4label = new System.Windows.Forms.Label();
+            this.usluga4comboBox = new System.Windows.Forms.ComboBox();
+            this.usluga4StoimostLabel = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usluga1comboBox
@@ -59,7 +64,7 @@
             "До 1000М²",
             "До 10000М²",
             "Свыше 1га"});
-            this.usluga1comboBox.Location = new System.Drawing.Point(400, 64);
+            this.usluga1comboBox.Location = new System.Drawing.Point(400, 42);
             this.usluga1comboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga1comboBox.Name = "usluga1comboBox";
             this.usluga1comboBox.Size = new System.Drawing.Size(140, 24);
@@ -69,7 +74,7 @@
             // usluga1label
             // 
             this.usluga1label.AutoSize = true;
-            this.usluga1label.Location = new System.Drawing.Point(51, 64);
+            this.usluga1label.Location = new System.Drawing.Point(51, 49);
             this.usluga1label.Name = "usluga1label";
             this.usluga1label.Size = new System.Drawing.Size(305, 17);
             this.usluga1label.TabIndex = 5;
@@ -85,7 +90,7 @@
             "Уточнение гр-ц з/у",
             "Раздел з/у",
             "Объединение з/у"});
-            this.usluga2comboBox.Location = new System.Drawing.Point(400, 130);
+            this.usluga2comboBox.Location = new System.Drawing.Point(400, 102);
             this.usluga2comboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga2comboBox.Name = "usluga2comboBox";
             this.usluga2comboBox.Size = new System.Drawing.Size(140, 24);
@@ -95,7 +100,7 @@
             // usluga2label
             // 
             this.usluga2label.AutoSize = true;
-            this.usluga2label.Location = new System.Drawing.Point(51, 138);
+            this.usluga2label.Location = new System.Drawing.Point(51, 105);
             this.usluga2label.Name = "usluga2label";
             this.usluga2label.Size = new System.Drawing.Size(194, 17);
             this.usluga2label.TabIndex = 7;
@@ -110,7 +115,7 @@
             "ИЖС",
             "Помещение",
             "Часть в здании/ддоме"});
-            this.usluga3comboBox.Location = new System.Drawing.Point(400, 217);
+            this.usluga3comboBox.Location = new System.Drawing.Point(400, 157);
             this.usluga3comboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga3comboBox.Name = "usluga3comboBox";
             this.usluga3comboBox.Size = new System.Drawing.Size(140, 24);
@@ -120,7 +125,7 @@
             // usluga1StoimostLabel
             // 
             this.usluga1StoimostLabel.AutoSize = true;
-            this.usluga1StoimostLabel.Location = new System.Drawing.Point(605, 71);
+            this.usluga1StoimostLabel.Location = new System.Drawing.Point(605, 50);
             this.usluga1StoimostLabel.Name = "usluga1StoimostLabel";
             this.usluga1StoimostLabel.Size = new System.Drawing.Size(71, 17);
             this.usluga1StoimostLabel.TabIndex = 12;
@@ -129,17 +134,17 @@
             // usluga3label
             // 
             this.usluga3label.AutoSize = true;
-            this.usluga3label.Location = new System.Drawing.Point(51, 224);
+            this.usluga3label.Location = new System.Drawing.Point(51, 160);
             this.usluga3label.Name = "usluga3label";
-            this.usluga3label.Size = new System.Drawing.Size(370, 17);
+            this.usluga3label.Size = new System.Drawing.Size(224, 17);
             this.usluga3label.TabIndex = 13;
-            this.usluga3label.Text = "Подготовка технического плана (без инвентаризации)";
+            this.usluga3label.Text = "Подготовка технического плана ";
             this.usluga3label.Click += new System.EventHandler(this.label6_Click);
             // 
             // usluga2StoimostLabel
             // 
             this.usluga2StoimostLabel.AutoSize = true;
-            this.usluga2StoimostLabel.Location = new System.Drawing.Point(605, 138);
+            this.usluga2StoimostLabel.Location = new System.Drawing.Point(605, 105);
             this.usluga2StoimostLabel.Name = "usluga2StoimostLabel";
             this.usluga2StoimostLabel.Size = new System.Drawing.Size(67, 17);
             this.usluga2StoimostLabel.TabIndex = 14;
@@ -149,16 +154,17 @@
             // usluga3StoimostLabel
             // 
             this.usluga3StoimostLabel.AutoSize = true;
-            this.usluga3StoimostLabel.Location = new System.Drawing.Point(605, 217);
+            this.usluga3StoimostLabel.Location = new System.Drawing.Point(605, 160);
             this.usluga3StoimostLabel.Name = "usluga3StoimostLabel";
             this.usluga3StoimostLabel.Size = new System.Drawing.Size(67, 17);
             this.usluga3StoimostLabel.TabIndex = 15;
             this.usluga3StoimostLabel.Text = "0 рублей";
+            this.usluga3StoimostLabel.Click += new System.EventHandler(this.usluga3StoimostLabel_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(635, 9);
+            this.label7.Location = new System.Drawing.Point(605, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 16;
@@ -166,7 +172,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(803, 71);
+            this.button1.Location = new System.Drawing.Point(803, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -178,7 +184,7 @@
             // usluga1
             // 
             this.usluga1.AutoSize = true;
-            this.usluga1.Location = new System.Drawing.Point(12, 64);
+            this.usluga1.Location = new System.Drawing.Point(29, 50);
             this.usluga1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga1.Name = "usluga1";
             this.usluga1.Size = new System.Drawing.Size(18, 17);
@@ -206,7 +212,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(803, 138);
+            this.button2.Location = new System.Drawing.Point(803, 102);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -217,7 +223,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(803, 217);
+            this.button3.Location = new System.Drawing.Point(803, 157);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -229,7 +235,7 @@
             // usluga2
             // 
             this.usluga2.AutoSize = true;
-            this.usluga2.Location = new System.Drawing.Point(12, 144);
+            this.usluga2.Location = new System.Drawing.Point(29, 106);
             this.usluga2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga2.Name = "usluga2";
             this.usluga2.Size = new System.Drawing.Size(18, 17);
@@ -240,7 +246,7 @@
             // usluga3
             // 
             this.usluga3.AutoSize = true;
-            this.usluga3.Location = new System.Drawing.Point(12, 223);
+            this.usluga3.Location = new System.Drawing.Point(29, 161);
             this.usluga3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usluga3.Name = "usluga3";
             this.usluga3.Size = new System.Drawing.Size(18, 17);
@@ -250,7 +256,7 @@
             // 
             // spravkaTextBox
             // 
-            this.spravkaTextBox.Location = new System.Drawing.Point(22, 350);
+            this.spravkaTextBox.Location = new System.Drawing.Point(12, 393);
             this.spravkaTextBox.Multiline = true;
             this.spravkaTextBox.Name = "spravkaTextBox";
             this.spravkaTextBox.ReadOnly = true;
@@ -261,7 +267,7 @@
             // ItogS
             // 
             this.ItogS.AutoSize = true;
-            this.ItogS.Location = new System.Drawing.Point(789, 294);
+            this.ItogS.Location = new System.Drawing.Point(811, 352);
             this.ItogS.Name = "ItogS";
             this.ItogS.Size = new System.Drawing.Size(67, 17);
             this.ItogS.TabIndex = 26;
@@ -270,7 +276,7 @@
             // 
             // ItogB
             // 
-            this.ItogB.Location = new System.Drawing.Point(638, 291);
+            this.ItogB.Location = new System.Drawing.Point(668, 349);
             this.ItogB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ItogB.Name = "ItogB";
             this.ItogB.Size = new System.Drawing.Size(75, 23);
@@ -279,11 +285,73 @@
             this.ItogB.UseVisualStyleBackColor = true;
             this.ItogB.Click += new System.EventHandler(this.ItogB_Click);
             // 
+            // usluga4
+            // 
+            this.usluga4.AutoSize = true;
+            this.usluga4.Location = new System.Drawing.Point(29, 213);
+            this.usluga4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.usluga4.Name = "usluga4";
+            this.usluga4.Size = new System.Drawing.Size(18, 17);
+            this.usluga4.TabIndex = 28;
+            this.usluga4.UseVisualStyleBackColor = true;
+            this.usluga4.CheckedChanged += new System.EventHandler(this.usluga4_CheckedChanged);
+            // 
+            // usluga4label
+            // 
+            this.usluga4label.AutoSize = true;
+            this.usluga4label.Location = new System.Drawing.Point(51, 212);
+            this.usluga4label.Name = "usluga4label";
+            this.usluga4label.Size = new System.Drawing.Size(107, 17);
+            this.usluga4label.TabIndex = 29;
+            this.usluga4label.Text = "Строительство";
+            this.usluga4label.Click += new System.EventHandler(this.usluga4label_Click);
+            // 
+            // usluga4comboBox
+            // 
+            this.usluga4comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.usluga4comboBox.FormattingEnabled = true;
+            this.usluga4comboBox.Items.AddRange(new object[] {
+            "ИЖС",
+            "Коммерческая недвижимость",
+            "Инженерные коммуникации"});
+            this.usluga4comboBox.Location = new System.Drawing.Point(400, 209);
+            this.usluga4comboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.usluga4comboBox.Name = "usluga4comboBox";
+            this.usluga4comboBox.Size = new System.Drawing.Size(140, 24);
+            this.usluga4comboBox.TabIndex = 30;
+            this.usluga4comboBox.SelectedIndexChanged += new System.EventHandler(this.button4_Click);
+            // 
+            // usluga4StoimostLabel
+            // 
+            this.usluga4StoimostLabel.AutoSize = true;
+            this.usluga4StoimostLabel.Location = new System.Drawing.Point(602, 212);
+            this.usluga4StoimostLabel.Name = "usluga4StoimostLabel";
+            this.usluga4StoimostLabel.Size = new System.Drawing.Size(67, 17);
+            this.usluga4StoimostLabel.TabIndex = 31;
+            this.usluga4StoimostLabel.Text = "0 рублей";
+            this.usluga4StoimostLabel.Click += new System.EventHandler(this.usluga4StoimostLabel_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(803, 210);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "тыкни";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 496);
+            this.ClientSize = new System.Drawing.Size(910, 539);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.usluga4StoimostLabel);
+            this.Controls.Add(this.usluga4comboBox);
+            this.Controls.Add(this.usluga4label);
+            this.Controls.Add(this.usluga4);
             this.Controls.Add(this.ItogB);
             this.Controls.Add(this.ItogS);
             this.Controls.Add(this.spravkaTextBox);
@@ -335,5 +403,10 @@
         private System.Windows.Forms.TextBox spravkaTextBox;
         private System.Windows.Forms.Label ItogS;
         private System.Windows.Forms.Button ItogB;
+        private System.Windows.Forms.CheckBox usluga4;
+        private System.Windows.Forms.Label usluga4label;
+        private System.Windows.Forms.ComboBox usluga4comboBox;
+        private System.Windows.Forms.Label usluga4StoimostLabel;
+        private System.Windows.Forms.Button button4;
     }
 }
