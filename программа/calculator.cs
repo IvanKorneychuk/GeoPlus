@@ -36,6 +36,7 @@ namespace программа
     public partial class calculator : Form
     {
         Usluga[] uslugi = new Usluga[4];
+        public static List<Usluga> vybrannye_uslugi = new List<Usluga>();
 
         public calculator()
         {
@@ -77,10 +78,24 @@ namespace программа
             int y = 0;
             for (int i = 0; i < uslugi.Length; i = i + 1)
             {
+                uslugi[i].vybrano.Click += usluga_Click;
                 uslugi[i].vybrano.Location = new Point(0, y);
                 Controls.Add(uslugi[i].vybrano);
 
+                uslugi[i].lb.Location = new Point(50, y);
+                Controls.Add(uslugi[i].lb);
                 y = y + 50;
+            }
+        }
+
+        private void usluga_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < uslugi.Length; i = i + 1)
+            {
+                if (sender == uslugi[i].vybrano)
+                {
+                    vybrannye_uslugi.Add(uslugi[i]);
+                }
             }
         }
 
@@ -286,6 +301,12 @@ namespace программа
         private void usluga3StoimostLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form2 korzina = new Form2();
+            korzina.Show();
         }
     }
 }

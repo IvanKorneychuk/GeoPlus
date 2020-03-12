@@ -34,4 +34,4 @@ C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\
 C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.csproj.GenerateResource.cache
 C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.exe
 C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.pdb
-C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.Form1.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.Form2.resources
