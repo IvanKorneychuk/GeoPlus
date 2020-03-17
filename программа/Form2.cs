@@ -30,6 +30,12 @@ namespace программа
                 cb.Size = usl.cb.Size;
                 cb.Location = usl.cb.Location;
                 Controls.Add(cb);
+
+                Label lb = new Label();
+                lb.Size = usl.lb.Size;
+                lb.Text = usl.lb.Text;
+                lb.Location = usl.lb.Location;
+                Controls.Add(lb);
             }  
         }
 

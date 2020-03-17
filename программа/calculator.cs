@@ -20,6 +20,7 @@ namespace программа
         public Usluga(string name, Dictionary<string, int> _Prices)
         {
             vybrano = new CheckBox();
+
             lb = new Label();
             lb.Text = name;
 
@@ -80,10 +81,16 @@ namespace программа
             {
                 uslugi[i].vybrano.Click += usluga_Click;
                 uslugi[i].vybrano.Location = new Point(0, y);
+                uslugi[i].vybrano.Size = new Size(30, 30);
                 Controls.Add(uslugi[i].vybrano);
 
                 uslugi[i].lb.Location = new Point(50, y);
+                uslugi[i].lb.Size = new Size(200, 30);
                 Controls.Add(uslugi[i].lb);
+
+                uslugi[i].cb.Location = new Point(250, y);
+                uslugi[i].cb.Size = new Size(200, 30);
+                Controls.Add(uslugi[i].cb);
                 y = y + 50;
             }
         }
