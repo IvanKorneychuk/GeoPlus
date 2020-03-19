@@ -1,0 +1,50 @@
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.exe.config
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\bin\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Properties.Resources.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.Afisha.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.calculator.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.DopInfo.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\программа\программа\obj\Debug\программа.AboutUsForm.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\bin\Debug\программа.exe.config
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\bin\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\bin\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.Afisha.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.calculator.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.DopInfo.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.AboutUsForm.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.Properties.Resources.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\06.02.2020\программа\obj\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\bin\Debug\программа.exe.config
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\bin\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\bin\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.Afisha.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.calculator.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.DopInfo.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.AboutUsForm.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.Properties.Resources.resources
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.exe
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.pdb
+C:\Users\user\Desktop\Корнейчук Иван\2ой год\НЕНУЖНАЯ\GeoPlus\программа\obj\Debug\программа.Form2.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\bin\Debug\программа.exe.config
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\bin\Debug\программа.exe
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\bin\Debug\программа.pdb
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.Afisha.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.calculator.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.DopInfo.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.AboutUsForm.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.Korzina.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.Properties.Resources.resources
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.exe
+C:\важная папка\Всё всё и всё\програмирование\GeoPlus-master\программа\obj\Debug\программа.pdb
