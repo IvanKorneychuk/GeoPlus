@@ -13,7 +13,14 @@ namespace программа
     public struct Usluga
     {
         public CheckBox vybrano;
+        /// <summary>
+        /// Название услуги
+        /// </summary>
         public Label lb;
+        /// <summary>
+        /// Стоимость услуги
+        /// </summary>
+        public Label stoimost;
         public ComboBox cb;
         public Dictionary<string, int> Prices;
 
@@ -23,6 +30,9 @@ namespace программа
 
             lb = new Label();
             lb.Text = name;
+
+            stoimost = new Label();
+            stoimost.Text = "0 рублей";
 
             Prices = _Prices;
             cb = new ComboBox();
@@ -60,7 +70,7 @@ namespace программа
                     { "Объединение з/ у", 8000 }
                 });
 
-            uslugi[2] = new Usluga("Подготовка межевого плана",
+            uslugi[2] = new Usluga("Подготовка технического плана",
                 new Dictionary<string, int>
                 {
                     { "ИЖС", 7000 },
@@ -76,22 +86,30 @@ namespace программа
                     { "Инженерные коммуникации", 650000 }
                 });
 
-            int y = 0;
+            int y = 50;
             for (int i = 0; i < uslugi.Length; i = i + 1)
             {
                 uslugi[i].vybrano.Click += usluga_Click;
-                uslugi[i].vybrano.Location = new Point(0, y);
-                uslugi[i].vybrano.Size = new Size(30, 30);
+                uslugi[i].vybrano.Location = new Point(20, y - 5);
+                uslugi[i].vybrano.Size = new Size(20, 20);
                 Controls.Add(uslugi[i].vybrano);
 
-                uslugi[i].lb.Location = new Point(50, y);
-                uslugi[i].lb.Size = new Size(200, 30);
+                uslugi[i].lb.Location = new Point(45, y);
+                uslugi[i].lb.Size = new Size(250, 30);
                 Controls.Add(uslugi[i].lb);
 
-                uslugi[i].cb.Location = new Point(250, y);
-                uslugi[i].cb.Size = new Size(200, 30);
+                uslugi[i].cb.Location = new Point(310, y);
+                uslugi[i].cb.Size = new Size(120, 30);
                 Controls.Add(uslugi[i].cb);
-                y = y + 50;
+
+
+
+                uslugi[i].stoimost.Location = new Point(450, y);
+                uslugi[i].stoimost.Size = new Size(100, 30);
+                Controls.Add(uslugi[i].stoimost);
+
+
+                y = y + 30;
             }
         }
 
@@ -314,6 +332,11 @@ namespace программа
         {
             Form2 korzina = new Form2();
             korzina.Show();
+        }
+
+        private void calculator_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
