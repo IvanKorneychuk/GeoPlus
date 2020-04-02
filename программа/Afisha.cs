@@ -57,5 +57,15 @@ namespace программа
         {
 
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            button2.Text = "help";
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            button2.Text = "справка";
+        }
     }
 }
