@@ -46,7 +46,7 @@ namespace программа
 
     public partial class calculator : Form
     {
-        Usluga[] uslugi = new Usluga[4];
+        Usluga[] uslugi = new Usluga[5];
         public static List<Usluga> vybrannye_uslugi = new List<Usluga>();
 
         public calculator()
@@ -85,6 +85,13 @@ namespace программа
                     { "Коммерческая недвижимость", 500000 },
                     { "Инженерные коммуникации", 650000 }
                 });
+
+            uslugi[4] = new Usluga("Подготовка акта обследования",
+    new Dictionary<string, int>
+    {
+                    { "1 шт", 4000 },
+                    { "2 шт", 8000 }
+    });
 
             int y = 50;
             for (int i = 0; i < uslugi.Length; i = i + 1)
@@ -230,20 +237,12 @@ namespace программа
 
         private void label1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga1label.Text + ".txt");
-            }
-            catch (Exception) { }
+            
 
         }
         private void label2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga2label.Text + ".txt");
-            }
-            catch (Exception) { }
+           
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -253,11 +252,7 @@ namespace программа
 
         private void label6_Click(object sender, EventArgs e)
         {
-            try
-            {
-                spravkaTextBox.Lines = System.IO.File.ReadAllLines("../../Resources/" + usluga3label.Text + ".txt");
-            }
-            catch (Exception) { }
+
         }
 
         private void ItogB_Click(object sender, EventArgs e)
@@ -267,8 +262,9 @@ namespace программа
             int price2 = Convert.ToInt32(usluga2StoimostLabel.Text.Replace(" рублей", ""));
             int price3 = Convert.ToInt32(usluga3StoimostLabel.Text.Replace(" рублей", ""));
             int price4 = Convert.ToInt32(usluga4StoimostLabel.Text.Replace(" рублей", ""));
+            int price5 = Convert.ToInt32(usluga5StoimostLabel.Text.Replace(" рублей", ""));
 
-            int priceItog = price1 + price2 + price3;
+            int priceItog = price1 + price2 + price3 + price4 + price5  ;
             ItogS.Text = priceItog.ToString() + " рублей";
         }
 
@@ -338,5 +334,56 @@ namespace программа
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga5StoimostLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usluga5label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int usluga5Price = 0;
+
+            if (usluga5.Checked)
+            {
+                //1 шт
+                if (usluga4comboBox.SelectedIndex == 0)
+                {
+                    usluga5Price = 4000;
+                }
+                //2 шт
+                if (usluga5comboBox.SelectedIndex == 1)
+                {
+                    usluga5Price = 8000;
+                }
+
+
+                usluga5StoimostLabel.Text = usluga5Price.ToString() + " рублей";
+            }
+
+            //Итого
+            usluga5StoimostLabel.Text = usluga5Price.ToString() + " рублей";
+        }
+
+        private void usluga1StoimostLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
+

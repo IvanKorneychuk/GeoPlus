@@ -48,3 +48,16 @@ C:\важная папка\Всё всё и всё\ \Програмирован
 C:\важная папка\Всё всё и всё\ \Програмирование\GeoPlus-master3\программа\obj\Debug\программа.csproj.GenerateResource.cache
 C:\важная папка\Всё всё и всё\ \Програмирование\GeoPlus-master3\программа\obj\Debug\программа.exe
 C:\важная папка\Всё всё и всё\ \Програмирование\GeoPlus-master3\программа\obj\Debug\программа.pdb
+C:\Users\Иван\source\repos\GeoPlus\программа\bin\Debug\программа.exe.config
+C:\Users\Иван\source\repos\GeoPlus\программа\bin\Debug\программа.exe
+C:\Users\Иван\source\repos\GeoPlus\программа\bin\Debug\программа.pdb
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.csprojAssemblyReference.cache
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.Afisha.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.calculator.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.DopInfo.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.AboutUsForm.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.Form2.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.Properties.Resources.resources
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.csproj.GenerateResource.cache
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.exe
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.pdb
