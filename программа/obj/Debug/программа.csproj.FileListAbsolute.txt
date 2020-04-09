@@ -61,3 +61,4 @@ C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\програ
 C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.csproj.GenerateResource.cache
 C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.exe
 C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.pdb
+C:\Users\Иван\source\repos\GeoPlus\программа\obj\Debug\программа.NEW_USL.resources

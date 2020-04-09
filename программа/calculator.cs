@@ -167,7 +167,7 @@ namespace программа
         {
             int usluga2Price = 0;
 
-            //Горизонтальная съемка земельного участка
+            //подготовка межевого плана
             if (usluga2.Checked)
             {
                 //До 1000М²
@@ -383,6 +383,12 @@ namespace программа
         private void usluga1StoimostLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            NEW_USL form3 = new NEW_USL();
+            form3.Show();
         }
     }
     }
