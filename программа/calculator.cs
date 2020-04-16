@@ -46,13 +46,28 @@ namespace программа
 
     public partial class calculator : Form
     {
-        Usluga[] uslugi = new Usluga[5];
+        List <Usluga> uslugi = new List <Usluga>();
         public static List<Usluga> vybrannye_uslugi = new List<Usluga>();
 
         public calculator()
         {
             InitializeComponent();
 
+            string[] lines = System.IO.File.ReadAllLines("Услуги.txt");
+            for (int i = 0; i < lines.Length; i = i + 3)
+            {
+
+                string uslName = lines[i];
+                string[] parts = lines[i + 1].Split(new string[] { "," }, StringSplitOptions.None );
+                Dictionary<string, int> dict = new Dictionary<string, int>();
+                for (int j = 0; j < parts.Length; j = j + 2) 
+                {
+                    dict.Add(parts[j], Convert.ToInt32(parts[j + 1])); 
+                }
+
+
+            }
+            /*
             uslugi[0] = new Usluga("Горизонтальная съемка земельного участка", 
                 new Dictionary<string, int>
                 {
@@ -91,10 +106,10 @@ namespace программа
     {
                     { "1 шт", 4000 },
                     { "2 шт", 8000 }
-    });
+    });*/
 
             int y = 50;
-            for (int i = 0; i < uslugi.Length; i = i + 1)
+            for (int i = 0; i < uslugi.Count ; i = i + 1)
             {
                 uslugi[i].vybrano.Click += usluga_Click;
                 uslugi[i].vybrano.Location = new Point(20, y - 5);
@@ -122,7 +137,7 @@ namespace программа
 
         private void usluga_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < uslugi.Length; i = i + 1)
+            for (int i = 0; i < uslugi.Count ; i = i + 1)
             {
                 if (sender == uslugi[i].vybrano)
                 {
