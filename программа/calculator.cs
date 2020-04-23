@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
 
 namespace программа
 {
@@ -405,6 +407,30 @@ namespace программа
             NEW_USL form3 = new NEW_USL();
             form3.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        
+            {
+                MailAddress fromMailAddress = new MailAddress("ivanshkakorneychuk@gmail.com", "Корнейчук Иван");
+                MailAddress toAddress = new MailAddress("ivanshka-korneychuk@mail.ru", " Корнейчук Иван");
+
+                using (MailMessage mailMessage = new MailMessage(fromMailAddress, toAddress))
+                using (SmtpClient smtpClient = new SmtpClient())
+                {
+                    mailMessage.Subject = "Новая услуга";
+                    mailMessage.Body = "Лови какаху";
+
+                    smtpClient.Host = "smtp.gmail.com";
+                    smtpClient.Port = 587;
+                    smtpClient.EnableSsl = true;
+                    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtpClient.UseDefaultCredentials = false;
+                    smtpClient.Credentials = new NetworkCredential(fromMailAddress.Address, "YbRbnjc1411");
+
+                    smtpClient.Send(mailMessage);
+                }
+            }
+        
     }
     }
 
