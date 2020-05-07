@@ -71,7 +71,7 @@
             "До 1000М²",
             "До 10000М²",
             "Свыше 1га"});
-            this.usluga1comboBox.Location = new System.Drawing.Point(310, 266);
+            this.usluga1comboBox.Location = new System.Drawing.Point(298, 65);
             this.usluga1comboBox.Margin = new System.Windows.Forms.Padding(2);
             this.usluga1comboBox.Name = "usluga1comboBox";
             this.usluga1comboBox.Size = new System.Drawing.Size(106, 21);
@@ -81,7 +81,7 @@
             // usluga1label
             // 
             this.usluga1label.AutoSize = true;
-            this.usluga1label.Location = new System.Drawing.Point(48, 273);
+            this.usluga1label.Location = new System.Drawing.Point(36, 72);
             this.usluga1label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga1label.Name = "usluga1label";
             this.usluga1label.Size = new System.Drawing.Size(238, 13);
@@ -98,7 +98,7 @@
             "Уточнение гр-ц з/у",
             "Раздел з/у",
             "Объединение з/у"});
-            this.usluga2comboBox.Location = new System.Drawing.Point(310, 315);
+            this.usluga2comboBox.Location = new System.Drawing.Point(298, 114);
             this.usluga2comboBox.Margin = new System.Windows.Forms.Padding(2);
             this.usluga2comboBox.Name = "usluga2comboBox";
             this.usluga2comboBox.Size = new System.Drawing.Size(106, 21);
@@ -108,7 +108,7 @@
             // usluga2label
             // 
             this.usluga2label.AutoSize = true;
-            this.usluga2label.Location = new System.Drawing.Point(48, 318);
+            this.usluga2label.Location = new System.Drawing.Point(36, 117);
             this.usluga2label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga2label.Name = "usluga2label";
             this.usluga2label.Size = new System.Drawing.Size(154, 13);
@@ -124,7 +124,7 @@
             "ИЖС",
             "Помещение",
             "Часть в здании/доме"});
-            this.usluga3comboBox.Location = new System.Drawing.Point(310, 360);
+            this.usluga3comboBox.Location = new System.Drawing.Point(298, 159);
             this.usluga3comboBox.Margin = new System.Windows.Forms.Padding(2);
             this.usluga3comboBox.Name = "usluga3comboBox";
             this.usluga3comboBox.Size = new System.Drawing.Size(106, 21);
@@ -134,7 +134,7 @@
             // usluga1StoimostLabel
             // 
             this.usluga1StoimostLabel.AutoSize = true;
-            this.usluga1StoimostLabel.Location = new System.Drawing.Point(464, 273);
+            this.usluga1StoimostLabel.Location = new System.Drawing.Point(452, 72);
             this.usluga1StoimostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga1StoimostLabel.Name = "usluga1StoimostLabel";
             this.usluga1StoimostLabel.Size = new System.Drawing.Size(54, 13);
@@ -145,7 +145,7 @@
             // usluga3label
             // 
             this.usluga3label.AutoSize = true;
-            this.usluga3label.Location = new System.Drawing.Point(48, 362);
+            this.usluga3label.Location = new System.Drawing.Point(36, 161);
             this.usluga3label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga3label.Name = "usluga3label";
             this.usluga3label.Size = new System.Drawing.Size(174, 13);
@@ -156,7 +156,7 @@
             // usluga2StoimostLabel
             // 
             this.usluga2StoimostLabel.AutoSize = true;
-            this.usluga2StoimostLabel.Location = new System.Drawing.Point(464, 318);
+            this.usluga2StoimostLabel.Location = new System.Drawing.Point(452, 117);
             this.usluga2StoimostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga2StoimostLabel.Name = "usluga2StoimostLabel";
             this.usluga2StoimostLabel.Size = new System.Drawing.Size(51, 13);
@@ -167,7 +167,7 @@
             // usluga3StoimostLabel
             // 
             this.usluga3StoimostLabel.AutoSize = true;
-            this.usluga3StoimostLabel.Location = new System.Drawing.Point(464, 362);
+            this.usluga3StoimostLabel.Location = new System.Drawing.Point(452, 161);
             this.usluga3StoimostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga3StoimostLabel.Name = "usluga3StoimostLabel";
             this.usluga3StoimostLabel.Size = new System.Drawing.Size(51, 13);
@@ -187,7 +187,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(612, 273);
+            this.button1.Location = new System.Drawing.Point(600, 72);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
@@ -199,7 +199,7 @@
             // usluga1
             // 
             this.usluga1.AutoSize = true;
-            this.usluga1.Location = new System.Drawing.Point(30, 274);
+            this.usluga1.Location = new System.Drawing.Point(18, 73);
             this.usluga1.Margin = new System.Windows.Forms.Padding(2);
             this.usluga1.Name = "usluga1";
             this.usluga1.Size = new System.Drawing.Size(15, 14);
@@ -229,7 +229,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(612, 315);
+            this.button2.Location = new System.Drawing.Point(600, 114);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
@@ -240,7 +240,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(612, 360);
+            this.button3.Location = new System.Drawing.Point(600, 159);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 19);
@@ -252,7 +252,7 @@
             // usluga2
             // 
             this.usluga2.AutoSize = true;
-            this.usluga2.Location = new System.Drawing.Point(30, 322);
+            this.usluga2.Location = new System.Drawing.Point(18, 121);
             this.usluga2.Margin = new System.Windows.Forms.Padding(2);
             this.usluga2.Name = "usluga2";
             this.usluga2.Size = new System.Drawing.Size(15, 14);
@@ -263,7 +263,7 @@
             // usluga3
             // 
             this.usluga3.AutoSize = true;
-            this.usluga3.Location = new System.Drawing.Point(30, 364);
+            this.usluga3.Location = new System.Drawing.Point(18, 163);
             this.usluga3.Margin = new System.Windows.Forms.Padding(2);
             this.usluga3.Name = "usluga3";
             this.usluga3.Size = new System.Drawing.Size(15, 14);
@@ -296,7 +296,7 @@
             // usluga4
             // 
             this.usluga4.AutoSize = true;
-            this.usluga4.Location = new System.Drawing.Point(30, 406);
+            this.usluga4.Location = new System.Drawing.Point(18, 205);
             this.usluga4.Margin = new System.Windows.Forms.Padding(2);
             this.usluga4.Name = "usluga4";
             this.usluga4.Size = new System.Drawing.Size(15, 14);
@@ -307,7 +307,7 @@
             // usluga4label
             // 
             this.usluga4label.AutoSize = true;
-            this.usluga4label.Location = new System.Drawing.Point(48, 404);
+            this.usluga4label.Location = new System.Drawing.Point(36, 203);
             this.usluga4label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga4label.Name = "usluga4label";
             this.usluga4label.Size = new System.Drawing.Size(83, 13);
@@ -323,7 +323,7 @@
             "ИЖС",
             "Коммерческая недвижимость",
             "Инженерные коммуникации"});
-            this.usluga4comboBox.Location = new System.Drawing.Point(310, 402);
+            this.usluga4comboBox.Location = new System.Drawing.Point(298, 201);
             this.usluga4comboBox.Margin = new System.Windows.Forms.Padding(2);
             this.usluga4comboBox.Name = "usluga4comboBox";
             this.usluga4comboBox.Size = new System.Drawing.Size(106, 21);
@@ -333,7 +333,7 @@
             // usluga4StoimostLabel
             // 
             this.usluga4StoimostLabel.AutoSize = true;
-            this.usluga4StoimostLabel.Location = new System.Drawing.Point(462, 404);
+            this.usluga4StoimostLabel.Location = new System.Drawing.Point(450, 203);
             this.usluga4StoimostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga4StoimostLabel.Name = "usluga4StoimostLabel";
             this.usluga4StoimostLabel.Size = new System.Drawing.Size(51, 13);
@@ -343,7 +343,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(612, 403);
+            this.button4.Location = new System.Drawing.Point(600, 202);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 19);
@@ -366,7 +366,7 @@
             // usluga5
             // 
             this.usluga5.AutoSize = true;
-            this.usluga5.Location = new System.Drawing.Point(30, 446);
+            this.usluga5.Location = new System.Drawing.Point(18, 245);
             this.usluga5.Margin = new System.Windows.Forms.Padding(2);
             this.usluga5.Name = "usluga5";
             this.usluga5.Size = new System.Drawing.Size(15, 14);
@@ -377,7 +377,7 @@
             // usluga5label
             // 
             this.usluga5label.AutoSize = true;
-            this.usluga5label.Location = new System.Drawing.Point(51, 447);
+            this.usluga5label.Location = new System.Drawing.Point(39, 246);
             this.usluga5label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga5label.Name = "usluga5label";
             this.usluga5label.Size = new System.Drawing.Size(168, 13);
@@ -392,7 +392,7 @@
             this.usluga5comboBox.Items.AddRange(new object[] {
             "1 шт.",
             "2 шт."});
-            this.usluga5comboBox.Location = new System.Drawing.Point(310, 439);
+            this.usluga5comboBox.Location = new System.Drawing.Point(298, 238);
             this.usluga5comboBox.Margin = new System.Windows.Forms.Padding(2);
             this.usluga5comboBox.Name = "usluga5comboBox";
             this.usluga5comboBox.Size = new System.Drawing.Size(106, 21);
@@ -402,7 +402,7 @@
             // usluga5StoimostLabel
             // 
             this.usluga5StoimostLabel.AutoSize = true;
-            this.usluga5StoimostLabel.Location = new System.Drawing.Point(462, 447);
+            this.usluga5StoimostLabel.Location = new System.Drawing.Point(450, 246);
             this.usluga5StoimostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usluga5StoimostLabel.Name = "usluga5StoimostLabel";
             this.usluga5StoimostLabel.Size = new System.Drawing.Size(51, 13);
@@ -412,7 +412,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(612, 447);
+            this.button6.Location = new System.Drawing.Point(600, 246);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(56, 19);

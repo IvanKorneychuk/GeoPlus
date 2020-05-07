@@ -60,12 +60,12 @@ namespace программа
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            button2.Text = "help";
+            
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            button2.Text = "справка";
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -76,6 +76,12 @@ namespace программа
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("https://www.geoplus73.com/");
         }
     }
 }
