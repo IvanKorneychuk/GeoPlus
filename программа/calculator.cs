@@ -58,7 +58,6 @@ namespace программа
             string[] lines = System.IO.File.ReadAllLines("Услуги.txt");
             for (int i = 0; i < lines.Length; i = i + 3)
             {
-
                 string uslName = lines[i];
                 string[] parts = lines[i + 1].Split(new string[] { "," }, StringSplitOptions.None );
                 Dictionary<string, int> dict = new Dictionary<string, int>();
@@ -67,48 +66,9 @@ namespace программа
                     dict.Add(parts[j], Convert.ToInt32(parts[j + 1])); 
                 }
 
-
+                uslugi.Add(new Usluga(uslName, dict));
             }
-            /*
-            uslugi[0] = new Usluga("Горизонтальная съемка земельного участка", 
-                new Dictionary<string, int>
-                {
-                    { "До 1000М²", 7000 },
-                    { "До 10000М²", 10000 },
-                    { "От 10000М²", 12000 }
-                });
-
-            uslugi[1] = new Usluga("Подготовка межевого плана",
-                new Dictionary<string, int>
-                {
-                    { "Образование з/у", 7000 },
-                    { "Уточнение гр-ц з / у", 7000 },
-                    { "Раздел з/ у", 8000 },
-                    { "Объединение з/ у", 8000 }
-                });
-
-            uslugi[2] = new Usluga("Подготовка технического плана",
-                new Dictionary<string, int>
-                {
-                    { "ИЖС", 7000 },
-                    { "Помещение", 5000 },
-                    { "Часть в здании/доме", 6000 }
-                });
-
-            uslugi[3] = new Usluga("Строительство",
-                new Dictionary<string, int>
-                {
-                    { "ИЖС", 1200000 },
-                    { "Коммерческая недвижимость", 500000 },
-                    { "Инженерные коммуникации", 650000 }
-                });
-
-            uslugi[4] = new Usluga("Подготовка акта обследования",
-    new Dictionary<string, int>
-    {
-                    { "1 шт", 4000 },
-                    { "2 шт", 8000 }
-    });*/
+         
 
             int y = 50;
             for (int i = 0; i < uslugi.Count ; i = i + 1)
@@ -124,6 +84,8 @@ namespace программа
 
                 uslugi[i].cb.Location = new Point(310, y);
                 uslugi[i].cb.Size = new Size(120, 30);
+                uslugi[i].cb.SelectedIndexChanged += new EventHandler(comboBox1_SelectedIndexChanged);
+
                 Controls.Add(uslugi[i].cb);
 
 
@@ -147,105 +109,7 @@ namespace программа
                 }
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-          
-
-            int usluga1Price = 0;
-
-            //Горизонтальная съемка земельного участка
-            if (usluga1.Checked)
-            {
-                //До 1000М²
-                if (usluga1comboBox.SelectedIndex == 0)
-                {
-                    usluga1Price = 7000;
-                }
-                //До 10000М²
-                if (usluga1comboBox.SelectedIndex == 1)
-                {
-                    usluga1Price = 10000;
-                }
-                //Больше 1га
-                if (usluga1comboBox.SelectedIndex == 2)
-                {
-                    usluga1Price = 12000;
-                }
-
-                usluga1StoimostLabel.Text = usluga1Price.ToString() + " рублей";
-            }
-
-            //Итого
-            usluga1StoimostLabel.Text = usluga1Price.ToString() + " рублей";
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int usluga2Price = 0;
-
-            //подготовка межевого плана
-            if (usluga2.Checked)
-            {
-                //До 1000М²
-                if (usluga2comboBox.SelectedIndex == 0)
-                {
-                    usluga2Price = 7000;
-                }
-                //До 10000М²
-                if (usluga2comboBox.SelectedIndex == 1)
-                {
-                    usluga2Price = 7000;
-                }
-                //Больше 1га
-                if (usluga2comboBox.SelectedIndex == 2)
-                {
-                    usluga2Price = 8000;
-                }
-                if (usluga2comboBox.SelectedIndex == 3)
-                {
-                    usluga2Price = 8000;
-                }
-
-            }
-
-            //Итого
-            usluga2StoimostLabel.Text = usluga2Price.ToString() + " рублей";
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-           
-
-            int usluga3Price = 0;
-
-            //Горизонтальная съемка земельного участка
-            if (usluga3.Checked)
-            {
-                //До 1000М²
-                if (usluga3comboBox.SelectedIndex == 0)
-                {
-                    usluga3Price = 7000;
-                }
-                //До 10000М²
-                if (usluga3comboBox.SelectedIndex == 1)
-                {
-                    usluga3Price = 5000;
-                }
-                //Больше 1га
-                if (usluga3comboBox.SelectedIndex == 2)
-                {
-                    usluga3Price = 6000;
-                }
-
-                usluga3StoimostLabel.Text = usluga3Price.ToString() + " рублей";
-            }
-
-            //Итого
-
-            usluga3StoimostLabel.Text = usluga3Price.ToString() + " рублей";
-        }
-
+        
         private void usluga2StoimostLabel_Click(object sender, EventArgs e)
         {
 
@@ -274,89 +138,40 @@ namespace программа
 
         private void ItogB_Click(object sender, EventArgs e)
         {
-
-            int price1 = Convert.ToInt32(usluga1StoimostLabel.Text.Replace(" рублей", ""));
+        /*    int price1 = Convert.ToInt32(usluga1StoimostLabel.Text.Replace(" рублей", ""));
             int price2 = Convert.ToInt32(usluga2StoimostLabel.Text.Replace(" рублей", ""));
             int price3 = Convert.ToInt32(usluga3StoimostLabel.Text.Replace(" рублей", ""));
             int price4 = Convert.ToInt32(usluga4StoimostLabel.Text.Replace(" рублей", ""));
             int price5 = Convert.ToInt32(usluga5StoimostLabel.Text.Replace(" рублей", ""));
 
             int priceItog = price1 + price2 + price3 + price4 + price5  ;
-            ItogS.Text = priceItog.ToString() + " рублей";
+            ItogS.Text = priceItog.ToString() + " рублей";*/
         }
 
-        private void ItogS_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void usluga4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usluga4label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-            int usluga4Price = 0;
-
-            //Горизонтальная съемка земельного участка
-            if (usluga4.Checked)
+            ComboBox cb = (ComboBox)sender;
+            foreach (Usluga usl in uslugi)
             {
-                //До 1000М²
-                if (usluga4comboBox.SelectedIndex == 0)
+                if (cb.Location == usl.cb.Location)
                 {
-                    usluga4Price = 1200000;
+                    foreach (Control ctrl in Controls)
+                    {
+                        if (ctrl is Label &&
+                                ctrl.Location == usl.stoimost.Location)
+                        {
+                            ctrl.Text = usl.Prices[cb.Text].ToString() + "рублей";
+                        }
+                    }
                 }
-                //До 10000М²
-                if (usluga4comboBox.SelectedIndex == 1)
-                {
-                    usluga4Price = 500000;
-                }
-                //Больше 1га
-                if (usluga3comboBox.SelectedIndex == 2)
-                {
-                    usluga4Price = 650000;
-                }
-
-                usluga4StoimostLabel.Text = usluga4Price.ToString() + " рублей";
             }
-
-            //Итого
-            usluga4StoimostLabel.Text = usluga4Price.ToString() + " рублей";
-        }
-
-        private void usluga4StoimostLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usluga3StoimostLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Form2 korzina = new Form2();
-            korzina.Show();
         }
 
         private void calculator_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void usluga5StoimostLabel_Click(object sender, EventArgs e)
         {
 
@@ -370,31 +185,6 @@ namespace программа
         private void usluga5label_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            int usluga5Price = 0;
-
-            if (usluga5.Checked)
-            {
-                //1 шт
-                if (usluga4comboBox.SelectedIndex == 0)
-                {
-                    usluga5Price = 4000;
-                }
-                //2 шт
-                if (usluga5comboBox.SelectedIndex == 1)
-                {
-                    usluga5Price = 8000;
-                }
-
-
-                usluga5StoimostLabel.Text = usluga5Price.ToString() + " рублей";
-            }
-
-            //Итого
-            usluga5StoimostLabel.Text = usluga5Price.ToString() + " рублей";
         }
 
         private void usluga1StoimostLabel_Click(object sender, EventArgs e)
@@ -411,26 +201,21 @@ namespace программа
         private void button9_Click(object sender, EventArgs e)
         
             {
-                MailAddress fromMailAddress = new MailAddress("ivanshkakorneychuk@gmail.com", "Корнейчук Иван");
-                MailAddress toAddress = new MailAddress("ivanshka-korneychuk@mail.ru", " Корнейчук Иван");
+            
+            mail   mail  = new mail ();
+            mail .Show();
 
-                using (MailMessage mailMessage = new MailMessage(fromMailAddress, toAddress))
-                using (SmtpClient smtpClient = new SmtpClient())
-                {
-                    mailMessage.Subject = "Новая услуга";
-                    mailMessage.Body = "Лови какаху";
+        }
 
-                    smtpClient.Host = "smtp.gmail.com";
-                    smtpClient.Port = 587;
-                    smtpClient.EnableSsl = true;
-                    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    smtpClient.UseDefaultCredentials = false;
-                    smtpClient.Credentials = new NetworkCredential(fromMailAddress.Address, "YbRbnjc1411");
+        private void label7_Click(object sender, EventArgs e)
+        {
 
-                    smtpClient.Send(mailMessage);
-                }
-            }
-        
+        }
+
+        private void ItogS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

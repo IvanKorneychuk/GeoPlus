@@ -23,26 +23,6 @@ namespace программа
             form2.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            DopInfo form3 = new DopInfo();
-            form3.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AboutUsForm form4 = new AboutUsForm();
-            form4.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Привет", "Мы вам нравимся?", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                MessageBox.Show("Спасибо");
-            }
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -82,6 +62,11 @@ namespace программа
         {
 
             System.Diagnostics.Process.Start("https://www.geoplus73.com/");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
